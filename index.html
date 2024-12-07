@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CALCI</title>
+    <link rel="icon" href="calci icon.jpg">
+    <style>
+        body {
+            background-image: url("cal bg.jpg");
+            background-repeat: repeat;
+            background-size: cover;
+        }
+
+
+
+
+        h1 {
+           color:whitesmoke;
+        }
+
+
+
+
+        form {
+            text-align: center;
+        }
+
+
+
+
+        input[type="text"] {
+            width: 250px;
+            padding: 10px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+        }
+
+
+
+
+        input[type="button"] {
+            width: 50px;
+            height: 50px;
+            margin: 5px;
+            font-size: 18px;
+            border: 2px solid #ccc;
+            border-radius: 5px;
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+   <center> <h1><i>the number cruncher</i></h1>
+   <table>
+    <form name="calci">
+        <input type="text" placeholder="0" name="display">
+        <br>
+        <input type="button" value="7" onclick="calci.display.value+='7'">
+        <input type="button" value="8" onclick="calci.display.value+='8'">
+        <input type="button" value="9" onclick="calci.display.value+='9'">
+        <input type="button" value="/" onclick="calci.display.value+='/'">
+        <br>
+        <br>
+        <input type="button" value="4" onclick="calci.display.value+='4'">
+        <input type="button" value="5" onclick="calci.display.value+='5'">
+        <input type="button" value="6" onclick="calci.display.value+='6'">
+        <input type="button" value="*" onclick="calci.display.value+='*'">
+        <br>
+        <br>
+        <input type="button" value="1" onclick="calci.display.value+='1'">
+        <input type="button" value="2" onclick="calci.display.value+='2'">
+        <input type="button" value="3" onclick="calci.display.value+='3'">
+        <input type="button" value="+" onclick="calci.display.value+='+'">
+        <br>
+        <br>
+        <input type="button" value="0" onclick="calci.display.value+='0'">
+        <input type="button" value="." onclick="calci.display.value+='.'">
+        <input type="button" value="-" onclick="calci.display.value+='-'">
+        <input type="button" value="=" onclick="calci.display.value+='='">
+        <br>
+        <input type="button"  value="C" id="del" onclick="calci.display.value=''">
+    </form>
+</table>
+</center>
+</body>
+</html>
+
+
+
+
+
